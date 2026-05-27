@@ -1,5 +1,5 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500;600;700&display=swap');
 
 body, html {
   font-family: 'Inter', sans-serif;
@@ -7,8 +7,9 @@ body, html {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Orbitron', sans-serif;
   font-weight: 600;
+  letter-spacing: 0.05em;
 }
 
 /* Header logo as rounded thumbnail */
@@ -65,71 +66,110 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-/* ── Two-tone: teal primary + copper/rose-gold secondary ── */
+/* ── Cyberpunk: Neon Cyan (Primary) + Neon Magenta (Secondary) ── */
 
-/* Tags / taxonomy pills → copper */
+/* Pulse Glow Animation */
+@keyframes pulse-glow {
+  0% {
+    transform: scale(1);
+    text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.8), 0 0 20px rgba(var(--color-primary-500), 0.4);
+  }
+  100% {
+    transform: scale(1.08);
+    text-shadow: 0 0 20px rgba(var(--color-primary-500), 1), 0 0 35px rgba(var(--color-primary-500), 0.6), 0 0 50px rgba(var(--color-secondary-500), 0.5);
+  }
+}
+
+/* Add custom avatar replacement symbol on homepage */
+.flex.flex-col.items-center.justify-center.text-center header::before {
+  content: "⚡";
+  font-size: 3rem;
+  color: rgb(var(--color-primary-500));
+  text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.8), 0 0 20px rgba(var(--color-primary-500), 0.4);
+  margin-bottom: 1.5rem;
+  display: inline-block;
+  animation: pulse-glow 2.5s infinite alternate ease-in-out;
+}
+
+/* Monospace stats/badges */
+.badge,
+.post-tags a,
+.article-meta,
+#TableOfContents {
+  font-family: 'Share Tech Mono', monospace;
+}
+
+/* Tags / taxonomy pills → neon magenta/cyan */
 .dark a[href*="/tags/"] span span,
 .dark a[href*="/categories/"] span span,
 .dark .post-tags a {
-  color: rgba(210, 165, 135, 0.7) !important;
-  border-color: rgba(210, 165, 135, 0.2) !important;
+  color: rgba(var(--color-secondary-500), 0.85) !important;
+  border-color: rgba(var(--color-secondary-500), 0.2) !important;
 }
 .dark a[href*="/tags/"]:hover span span,
 .dark a[href*="/categories/"]:hover span span,
 .dark .post-tags a:hover {
-  background: rgba(210, 165, 135, 0.07) !important;
-  border-color: rgba(210, 165, 135, 0.35) !important;
+  background: rgba(var(--color-secondary-500), 0.08) !important;
+  border-color: rgba(var(--color-secondary-500), 0.45) !important;
+  box-shadow: 0 0 8px rgba(var(--color-secondary-500), 0.3);
 }
 
-/* Article meta (date, reading time) → muted copper */
+/* Article meta (date, reading time) → muted neutral */
 .dark .article-meta,
 .dark .article-meta * {
-  color: rgba(200, 150, 115, 0.7) !important;
+  color: rgba(var(--color-neutral-300), 0.75) !important;
 }
 
-/* In-body links → teal underline */
+/* In-body links → neon cyan underline and text glow on hover */
 .dark .prose a:not(.badge) {
-  text-decoration-color: rgba(10, 245, 210, 0.35) !important;
+  text-decoration-color: rgba(var(--color-primary-500), 0.35) !important;
+  transition: all 0.2s ease;
 }
 .dark .prose a:not(.badge):hover {
-  text-decoration-color: rgba(10, 245, 210, 0.7) !important;
+  text-decoration-color: rgba(var(--color-primary-500), 0.9) !important;
+  color: rgb(var(--color-primary-500)) !important;
+  text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.4);
 }
 
-/* Table of contents → copper on hover */
+/* Table of contents → neon magenta on hover */
 .dark #TableOfContents a:hover {
-  color: rgb(220, 155, 120) !important;
+  color: rgb(var(--color-secondary-500)) !important;
+  text-shadow: 0 0 5px rgba(var(--color-secondary-500), 0.3);
 }
 
-/* Breadcrumbs → muted copper */
+/* Breadcrumbs → muted neutral */
 .dark .breadcrumbs a {
-  color: rgba(200, 150, 115, 0.7) !important;
+  color: rgba(var(--color-neutral-300), 0.7) !important;
 }
 .dark .breadcrumbs a:hover {
-  color: rgb(220, 155, 120) !important;
+  color: rgb(var(--color-secondary-500)) !important;
 }
 
-/* Pagination → teal active */
+/* Pagination → neon cyan active */
 .dark .pagination .active a {
-  background: rgba(10, 245, 210, 0.1) !important;
-  border-color: rgba(10, 245, 210, 0.4) !important;
-  color: rgb(10, 245, 210) !important;
+  background: rgba(var(--color-primary-500), 0.12) !important;
+  border-color: rgba(var(--color-primary-500), 0.45) !important;
+  color: rgb(var(--color-primary-500)) !important;
+  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.3);
 }
 
-/* Search highlight → copper */
+/* Search highlight → neon magenta */
 .dark mark, .dark .search-result mark {
-  background: rgba(220, 155, 120, 0.18) !important;
-  color: rgb(235, 180, 145) !important;
+  background: rgba(var(--color-secondary-500), 0.22) !important;
+  color: rgb(var(--color-neutral-50)) !important;
 }
 
-/* ── Card glow (teal border + warm halo) ─────── */
+/* ── Card glow (Neon Cyan border + dual halo) ─────── */
 .dark article[class*="card"],
 .dark .card,
 .dark div[class*="recent"] a,
 .dark .taxonomy-card,
 .dark .category-card {
   transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-  border: 1px solid rgba(10, 245, 210, 0.08);
-  box-shadow: 0 0 8px rgba(10, 245, 210, 0.03);
+  border: 1px solid rgba(var(--color-primary-500), 0.15);
+  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.04);
+  background: rgba(var(--color-neutral-900), 0.45) !important;
+  backdrop-filter: blur(8px);
 }
 
 .dark article[class*="card"]:hover,
@@ -137,35 +177,35 @@ h1, h2, h3, h4, h5, h6 {
 .dark div[class*="recent"] a:hover,
 .dark .taxonomy-card:hover,
 .dark .category-card:hover {
-  border-color: rgba(10, 245, 210, 0.18);
+  border-color: rgba(var(--color-primary-500), 0.45);
   box-shadow:
-    0 0 10px rgba(10, 245, 210, 0.12),
-    0 0 30px rgba(220, 155, 120, 0.06);
+    0 0 15px rgba(var(--color-primary-500), 0.25),
+    0 0 35px rgba(var(--color-secondary-500), 0.12);
   transform: translateY(-2px);
 }
 
-/* ── Heading hover → warm glow ───────────────── */
+/* ── Heading hover → neon cyan glow ───────────────── */
 .dark h1 a:hover,
 .dark h2 a:hover,
 .dark h3 a:hover,
 .dark .article-title:hover {
-  text-shadow: 0 0 10px rgba(220, 155, 120, 0.25);
+  text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.55);
 }
 
 /* ── Scrollbar ───────────────────────────────── */
 .dark ::-webkit-scrollbar-thumb {
-  background: rgba(10, 245, 210, 0.2);
+  background: rgba(var(--color-primary-500), 0.25);
   border-radius: 4px;
 }
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: rgba(10, 245, 210, 0.35);
+  background: rgba(var(--color-primary-500), 0.5);
 }
 .dark ::-webkit-scrollbar-track {
-  background: rgba(13, 16, 35, 0.8);
+  background: rgba(var(--color-neutral-900), 0.85);
 }
 
-/* ── Selection highlight → warm ──────────────── */
+/* ── Selection highlight → neon magenta ──────────────── */
 .dark ::selection {
-  background: rgba(220, 155, 120, 0.25);
-  color: rgb(255, 240, 230);
+  background: rgba(var(--color-secondary-500), 0.35);
+  color: rgb(var(--color-neutral-50));
 }

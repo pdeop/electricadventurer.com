@@ -2,4 +2,4 @@
 title: "Punit Deotale"
 ---
 
-I build IAM features at AWS used by millions of customers. I also write about things I'm passionate about: technology, electric vehicles, and longevity.
+EV Enthusiast & Road Tripper. Documenting my adventures, EV road trips, and green tech learnings across the Cascades and beyond.
