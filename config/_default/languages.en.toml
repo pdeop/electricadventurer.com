@@ -13,7 +13,6 @@ title = "Electric Adventurer"
 
 [params.author]
   name = "Punit Deotale"
-  image = "images/punit_ai.jpg"
   headline = "EV Enthusiast & Road Tripper"
   bio = "Documenting my adventures, EV road trips, and green tech learnings across the Cascades and beyond."
   links = [

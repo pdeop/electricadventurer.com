@@ -1,4 +1,4 @@
-colorScheme = "neonforest"
+colorScheme = "cyberpunkelectric"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
 
@@ -7,7 +7,7 @@ enableCodeCopy = true
 
 disableImageOptimization = false
 disableTextInHeader = false
-Logo = "images/punit_ai.jpg"
+Logo = ""
 
 [header]
   layout = "fixed-fill-blur"
