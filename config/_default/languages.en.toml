@@ -12,10 +12,7 @@ title = "Electric Adventurer"
   description = "Documenting EV road trips, sustainability, and green cascading adventures."
 
 [params.author]
-  name = "Punit Deotale"
+  name = "Electric Adventurer"
   headline = "EV Enthusiast & Road Tripper"
-  bio = "Documenting my adventures, EV road trips, and green tech learnings across the Cascades and beyond."
-  links = [
-    { linkedin = "https://www.linkedin.com/in/punitdeotale/" },
-    { github = "https://github.com/pdeop" },
-  ]
+  bio = "Documenting adventures, EV road trips, and green tech learnings across the Cascades and beyond."
+  links = []

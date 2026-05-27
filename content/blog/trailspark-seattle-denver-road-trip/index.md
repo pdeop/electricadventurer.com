@@ -5,7 +5,7 @@ draft: false
 description: "3,000 miles round trip, three mountain passes, zero gas, one very good dog, and the reason I built TrailSpark."
 tags: ["ev", "road-trip", "rivian", "trailspark", "moab", "vail-pass", "adventure"]
 categories: ["Electric Vehicles"]
-authors: ["punit-deotale"]
+authors: ["electric-adventurer"]
 showHero: false
 ---
 
@@ -19,9 +19,9 @@ This time we did it right. Four leisurely days each way. Overnight stops in Bois
 
 ## The Basics
 
-- **Route:** North Bend, WA → Denver, CO → North Bend, WA
+- **Route:** Seattle Area, WA → Denver, CO → Seattle Area, WA
 - **Vehicle:** Rivian R1S
-- **The Crew:** Me, Rabab, and our 100 lb Goldendoodle, Korra
+- **The Crew:** Me, my partner, and our 100 lb Goldendoodle, Korra
 
 **~3,000 Round Trip Miles · 7 Days on the Road · 11,113 Peak Altitude (ft) · 3 Mountain Passes · 0 Gas Stops**
 
@@ -34,7 +34,7 @@ This time we did it right. Four leisurely days each way. Overnight stops in Bois
 
 ## Outbound Route · I-90 → I-84 → I-15 → US-191 → I-70 → Denver
 
-- **North Bend, WA** — Departed ~1 PM · 99% charge · Korra installed in back seat · weather looking good · let's go
+- **Seattle Area, WA** — Departed ~1 PM · 99% charge · Korra installed in back seat · weather looking good · let's go
 - ⚡ **Hermiston, OR** — Electrify America · 52%→88% · 33 min · 121 mi added · $28.84
 - ⚡ **Island City, OR** — Electrify America · 50%→85% · 30 min · dense fog at Deadman Pass just before this stop
 - 🌙 **Boise, ID** — Night 1 · 454 miles · hotel booked en route · overnight L2 charge
@@ -58,7 +58,7 @@ The morning of November 26th, things looked good. Cold but clear. We made the ca
 
 ---
 
-## Day One — North Bend to Boise: Fog at Deadman Pass
+## Day One — Seattle to Boise: Fog at Deadman Pass
 
 Left around 1 PM, leisurely by design. We take I-90 east to Yakima, south on I-82 through the valley, then I-84 into Oregon, destination Boise for the first night. The landscape isn't your most beautiful but it isn't boring either.
 
@@ -166,7 +166,7 @@ Light snow on the summit, I-70 backed up with traffic. Google routed us off the 
   <div class="photo-item"><img src="/images/road-trip/20251129_173607.jpg" alt="R1S at Frisco Supercharger in the snow at night"><div class="caption">Frisco at 9,097 ft — snowy, dark, and we just crossed Vail Pass</div></div>
 </div>
 
-1,435 miles from North Bend. Three mountain passes, dense fog, rain, Moab detour at dusk, Vail Pass at night, off-road detour on unplowed road. Zero gas stops! Does it get any more adventurous than this for any vehicle, let alone an electric one??
+1,435 miles from the Seattle area. Three mountain passes, dense fog, rain, Moab detour at dusk, Vail Pass at night, off-road detour on unplowed road. Zero gas stops! Does it get any more adventurous than this for any vehicle, let alone an electric one??
 
 ---
 
@@ -246,6 +246,6 @@ So I built [TrailSpark](https://trailspark.me)! You drop your photos in and it b
 
 ---
 
-*Punit, Rabab & Korra · North Bend, WA → Denver, CO → North Bend, WA · November-December 2025*
+*The Electric Adventurer & Korra · Seattle Area, WA → Denver, CO → Seattle Area, WA · November-December 2025*
 
 *Got your own EV road trip? Drop your photos into [TrailSpark](https://trailspark.me) and share it!!*

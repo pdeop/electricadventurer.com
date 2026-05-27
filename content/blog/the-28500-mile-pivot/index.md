@@ -5,7 +5,7 @@ draft: false
 description: "Three and a half years, three EVs, 87,000 miles, and 31 metric tons of CO2 kept out of the sky. The story of going from a Tesla commuter to a dual-Rivian household in the Cascades."
 tags: ["ev", "sustainability", "rivian", "tesla", "carbon-offset"]
 categories: ["Electric Vehicles"]
-authors: ["punit-deotale"]
+authors: ["electric-adventurer"]
 showHero: true
 heroStyle: "big"
 ---
@@ -40,18 +40,18 @@ So how did I get here?
 
 I love cars! Always have. I've owned several ICE vehicles over the years and my absolute favorite was a 2013 BMW X5. That thing had presence! I may write a blog post about all my cars someday - It's not like I had Jay Leno's garage lol, just something personal to me.
 
-In August 2022, I'd recently moved to Washington for my job at Amazon. Pacific Northwest was the new home, I had a 60-mile round-trip commute from North Bend to Seattle down I-90, and it felt like the right time to try the electric life! The only real good option at the time was the Tesla Model Y, so I got the Performance model. Black, fast, and ruthlessly efficient at 3.5 mi/kWh.
+In August 2022, I'd recently moved to Washington for my job in tech. Pacific Northwest was the new home, I had a 60-mile round-trip commute from the Cascade foothills to Seattle down I-90, and it felt like the right time to try the electric life! The only real good option at the time was the Tesla Model Y, so I got the Performance model. Black, fast, and ruthlessly efficient at 3.5 mi/kWh.
 
 Man, I loved that car! The instant torque, the tech, the silence. The only thing I didn't love was the harsh ride, which I fixed a little by swapping to all-terrain tires on 18-inch wheels. Meanwhile, the Acura RDX just sat in the driveway. I loved that car too, but after the Tesla arrived it barely moved. It was the gas-powered safety net I told myself I still needed for snow runs or hauling gear. It was also the thing keeping me from being able to say my household was fully electric!
 
 <div class="photo-collage">
-  <div class="photo-item"><img src="/images/ev-journey/tesla-cherry-blossoms.jpg" alt="The Performance Model Y in North Bend, Mt. Si in the background"><div class="caption">North Bend, Mt. Si in the background</div></div>
+  <div class="photo-item"><img src="/images/ev-journey/tesla-cherry-blossoms.jpg" alt="The Performance Model Y in the Cascade foothills"><div class="caption">Cascade foothills</div></div>
   <div class="photo-item"><img src="/images/ev-journey/tesla-korra-snow.jpg" alt="Korra approved of the Tesla too"><div class="caption">Korra approved</div></div>
 </div>
 
 ## The Comfort Problem
 
-OK so here's what nobody tells you about the Performance Model Y. After tens of thousands of miles of commuting, you start to feel every single one of them! The ride never really softened up, even on 18s. And the seats. Look, seats are personal, but for us — three days a week on I-90 from North Bend to Seattle and back — we never got comfortable. We'd been spoiled by the BMW X5, the Acura RDX, the Infiniti FX37. The Tesla seats just didn't do it for us.
+OK so here's what nobody tells you about the Performance Model Y. After tens of thousands of miles of commuting, you start to feel every single one of them! The ride never really softened up, even on 18s. And the seats. Look, seats are personal, but for us — three days a week on I-90 from the foothills to Seattle and back — we never got comfortable. We'd been spoiled by the BMW X5, the Acura RDX, the Infiniti FX37. The Tesla seats just didn't do it for us.
 
 We wanted something bigger. Something more comfortable. Something that didn't make a 70-mile commute feel like an endurance test! That's how we found the Rivian R1S. From the very first test drive, it was obvious. The R1S was what the Model Y wanted to be when it grew up! Everything the Tesla did well, the R1S did better, and it was built for people who actually put miles on their cars.
 

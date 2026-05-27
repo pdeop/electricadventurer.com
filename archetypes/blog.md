@@ -9,7 +9,7 @@ tags:
 categories:
   # Pick one: Technology, Electric Vehicles, Longevity and Health, My Work
   - Technology
-author: "Punit Deotale"
+author: "Electric Adventurer"
 ---
 
 Write your blog post content here.
