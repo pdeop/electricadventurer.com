@@ -499,3 +499,75 @@ hr::before {
   0% { left: -50%; }
   100% { left: 150%; }
 }
+
+/* ── Bento Grid & Cards ───────────────────────────────── */
+.bento-grid {
+  display: grid !important;
+}
+
+.bento-card {
+  position: relative;
+  background: rgba(11, 11, 11, 0.65) !important;
+  border: 1px solid rgba(var(--color-primary-500), 0.18) !important;
+  border-radius: 1rem !important;
+  box-shadow: 
+    0 4px 30px rgba(0, 0, 0, 0.4),
+    0 0 15px rgba(var(--color-primary-500), 0.03) !important;
+  backdrop-filter: blur(14px) !important;
+  -webkit-backdrop-filter: blur(14px) !important;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.bento-card:hover {
+  transform: translateY(-5px) scale(1.008) !important;
+  border-color: rgba(var(--color-primary-500), 0.9) !important;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(var(--color-primary-500), 0.35),
+    0 0 50px rgba(var(--color-secondary-500), 0.15) !important;
+}
+
+/* Specific text & style mappings for Bento widgets */
+.ShareTechMono {
+  font-family: 'Share Tech Mono', monospace !important;
+}
+
+.text-4.5xl {
+  font-size: 2.75rem !important;
+  line-height: 1 !important;
+}
+
+.h1-glitch-active {
+  text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.2);
+}
+.h1-glitch-active:hover {
+  animation: text-glitch 0.3s steps(2) infinite;
+  color: #ffffff !important;
+}
+
+/* Ensure images within cards are crisp and responsive */
+.bento-card img {
+  border: none !important;
+  box-shadow: none !important;
+}
+.bento-card img:hover {
+  border: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Profile links overlay inside bento */
+.bento-card a[href*="github.com"] svg,
+.bento-card a[href*="linkedin.com"] svg,
+.bento-card a[href*="twitter.com"] svg,
+.bento-card a[href*="mailto:"] svg {
+  transition: all 0.25s ease !important;
+}
+.bento-card a[href*="github.com"]:hover svg,
+.bento-card a[href*="linkedin.com"]:hover svg,
+.bento-card a[href*="twitter.com"]:hover svg,
+.bento-card a[href*="mailto:"]:hover svg {
+  color: rgb(var(--color-primary-500)) !important;
+  filter: drop-shadow(0 0 6px rgb(var(--color-primary-500))) !important;
+}
+
