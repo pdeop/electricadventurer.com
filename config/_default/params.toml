@@ -1,4 +1,4 @@
-colorScheme = "cyberpunkelectric"
+colorScheme = "vibrantvoltage"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
 
@@ -7,7 +7,7 @@ enableCodeCopy = true
 
 disableImageOptimization = false
 disableTextInHeader = false
-Logo = ""
+Logo = "images/logo.svg"
 
 [header]
   layout = "fixed-fill-blur"

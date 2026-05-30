@@ -66,30 +66,32 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-/* ── Cyberpunk: Neon Cyan (Primary) + Neon Magenta (Secondary) ── */
+/* ── Vibrant Voltage: Electric Green (Primary) + Electric Blue (Secondary) ── */
 
-/* Pulse Glow Animation */
-@keyframes pulse-glow {
+/* Pulsing glow effect for the homepage profile logo */
+.h-36.w-36.rounded-full {
+  border: 2.5px solid rgb(var(--color-primary-500));
+  box-shadow: 0 0 15px rgba(var(--color-primary-500), 0.3);
+  animation: pulse-glow-logo 3s infinite alternate ease-in-out;
+  background-color: rgb(var(--color-neutral-900)) !important;
+  transition: all 0.3s ease;
+  padding: 4px;
+}
+.h-36.w-36.rounded-full:hover {
+  border-color: rgb(var(--color-secondary-500));
+  box-shadow: 0 0 25px rgba(var(--color-secondary-500), 0.55), 0 0 45px rgba(var(--color-primary-500), 0.25);
+  transform: scale(1.05) rotate(5deg);
+}
+
+@keyframes pulse-glow-logo {
   0% {
-    transform: scale(1);
-    text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.8), 0 0 20px rgba(var(--color-primary-500), 0.4);
+    box-shadow: 0 0 12px rgba(var(--color-primary-500), 0.35), 0 0 5px rgba(var(--color-secondary-500), 0.1);
   }
   100% {
-    transform: scale(1.08);
-    text-shadow: 0 0 20px rgba(var(--color-primary-500), 1), 0 0 35px rgba(var(--color-primary-500), 0.6), 0 0 50px rgba(var(--color-secondary-500), 0.5);
+    box-shadow: 0 0 22px rgba(var(--color-primary-500), 0.55), 0 0 30px rgba(var(--color-secondary-500), 0.3);
   }
 }
 
-/* Add custom avatar replacement symbol on homepage */
-.flex.flex-col.items-center.justify-center.text-center header::before {
-  content: "⚡";
-  font-size: 3rem;
-  color: rgb(var(--color-primary-500));
-  text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.8), 0 0 20px rgba(var(--color-primary-500), 0.4);
-  margin-bottom: 1.5rem;
-  display: inline-block;
-  animation: pulse-glow 2.5s infinite alternate ease-in-out;
-}
 
 /* Monospace stats/badges */
 .badge,
