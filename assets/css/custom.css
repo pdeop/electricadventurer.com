@@ -68,8 +68,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Vibrant Voltage: Cyberpunk Electric Style ── */
 
-/* CRT Scanline effect overlay on dark body */
-.dark body::before {
+/* CRT Scanline effect overlay on body */
+body::before {
   content: "";
   position: fixed;
   top: 0;
@@ -87,7 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Running high-voltage current flow bar at the top of the screen */
-.dark body::after {
+body::after {
   content: '';
   position: fixed;
   top: 0;
@@ -114,16 +114,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* HUD Cyber Grid Background with twin radial glowing ambient lights */
-.dark body {
+body, html {
   background-color: rgb(var(--color-neutral-900)) !important;
+  color: rgb(var(--color-neutral)) !important;
+}
+
+body {
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(var(--color-primary-500), 0.11), transparent 55%),
-    radial-gradient(circle at 100% 85%, rgba(var(--color-secondary-500), 0.08), transparent 50%),
-    linear-gradient(rgba(var(--color-primary-500), 0.018) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(var(--color-primary-500), 0.018) 1px, transparent 1px);
-  background-size: 100% 100%, 100% 100%, 45px 45px, 45px 45px;
-  background-position: top center, bottom right, center top, center top;
-  background-attachment: fixed;
+    radial-gradient(circle at 50% 0%, rgba(0, 255, 136, 0.11), transparent 55%),
+    radial-gradient(circle at 100% 85%, rgba(0, 216, 255, 0.08), transparent 50%),
+    linear-gradient(rgba(0, 255, 136, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 136, 0.018) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 100% 100%, 45px 45px, 45px 45px !important;
+  background-position: top center, bottom right, center top, center top !important;
+  background-attachment: fixed !important;
   position: relative;
 }
 
@@ -168,18 +172,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Tags / taxonomy pills → high-voltage electric neon borders and glow hover */
-.dark a[href*="/tags/"] span span,
-.dark a[href*="/categories/"] span span,
-.dark .post-tags a {
+a[href*="/tags/"] span span,
+a[href*="/categories/"] span span,
+.post-tags a {
   background: rgba(var(--color-neutral-800), 0.45) !important;
   color: rgba(var(--color-primary-500), 0.85) !important;
   border: 1px solid rgba(var(--color-primary-500), 0.25) !important;
   text-shadow: 0 0 2px rgba(var(--color-primary-500), 0.3);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.dark a[href*="/tags/"]:hover span span,
-.dark a[href*="/categories/"]:hover span span,
-.dark .post-tags a:hover {
+a[href*="/tags/"]:hover span span,
+a[href*="/categories/"]:hover span span,
+.post-tags a:hover {
   background: rgba(var(--color-primary-500), 0.08) !important;
   border-color: rgba(var(--color-primary-500), 0.85) !important;
   color: rgb(var(--color-primary-500)) !important;
@@ -190,38 +194,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Article meta (date, reading time) → muted neutral */
-.dark .article-meta,
-.dark .article-meta * {
+.article-meta,
+.article-meta * {
   color: rgba(var(--color-neutral-300), 0.75) !important;
 }
 
 /* In-body links → neon cyan underline and text glow on hover */
-.dark .prose a:not(.badge) {
+.prose a:not(.badge) {
   text-decoration-color: rgba(var(--color-primary-500), 0.35) !important;
   transition: all 0.25s ease;
 }
-.dark .prose a:not(.badge):hover {
+.prose a:not(.badge):hover {
   text-decoration-color: rgba(var(--color-primary-500), 0.95) !important;
   color: rgb(var(--color-primary-500)) !important;
   text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.45);
 }
 
 /* Table of contents → neon blue on hover */
-.dark #TableOfContents a:hover {
+#TableOfContents a:hover {
   color: rgb(var(--color-secondary-500)) !important;
   text-shadow: 0 0 6px rgba(var(--color-secondary-500), 0.4);
 }
 
 /* Breadcrumbs → muted neutral */
-.dark .breadcrumbs a {
+.breadcrumbs a {
   color: rgba(var(--color-neutral-300), 0.7) !important;
 }
-.dark .breadcrumbs a:hover {
+.breadcrumbs a:hover {
   color: rgb(var(--color-secondary-500)) !important;
 }
 
 /* Pagination → neon green active */
-.dark .pagination .active a {
+.pagination .active a {
   background: rgba(var(--color-primary-500), 0.12) !important;
   border-color: rgba(var(--color-primary-500), 0.6) !important;
   color: rgb(var(--color-primary-500)) !important;
@@ -229,17 +233,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Search highlight → neon blue */
-.dark mark, .dark .search-result mark {
+mark, .search-result mark {
   background: rgba(var(--color-secondary-500), 0.25) !important;
   color: rgb(var(--color-neutral-50)) !important;
 }
 
 /* ── Card glow (Neon green border + dual halo + inner cyber glow) ─────── */
-.dark article[class*="card"],
-.dark .card,
-.dark div[class*="recent"] a,
-.dark .taxonomy-card,
-.dark .category-card {
+article[class*="card"],
+.card,
+div[class*="recent"] a,
+.taxonomy-card,
+.category-card {
   position: relative;
   transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
               transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
@@ -250,9 +254,9 @@ h1, h2, h3, h4, h5, h6 {
   backdrop-filter: blur(10px);
 }
 
-.dark article[class*="card"]::after,
-.dark .card::after,
-.dark div[class*="recent"] a::after {
+article[class*="card"]::after,
+.card::after,
+div[class*="recent"] a::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -262,11 +266,11 @@ h1, h2, h3, h4, h5, h6 {
   transition: box-shadow 0.35s ease;
 }
 
-.dark article[class*="card"]:hover,
-.dark .card:hover,
-.dark div[class*="recent"] a:hover,
-.dark .taxonomy-card:hover,
-.dark .category-card:hover {
+article[class*="card"]:hover,
+.card:hover,
+div[class*="recent"] a:hover,
+.taxonomy-card:hover,
+.category-card:hover {
   border-color: rgba(var(--color-primary-500), 0.85) !important;
   box-shadow:
     0 0 20px rgba(var(--color-primary-500), 0.35),
@@ -274,21 +278,22 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-4px) scale(1.008);
 }
 
-.dark article[class*="card"]:hover::after,
-.dark .card:hover::after,
-.dark div[class*="recent"] a:hover::after {
+article[class*="card"]:hover::after,
+.card:hover::after,
+div[class*="recent"] a:hover::after {
   box-shadow: inset 0 0 20px rgba(var(--color-secondary-500), 0.2) !important;
 }
 
 /* ── Heading glow & hover glow ───────────────── */
-.dark h1, .dark h2, .dark h3 {
+h1, h2, h3 {
   text-shadow: 0 0 6px rgba(var(--color-primary-500), 0.12);
+  color: rgb(var(--color-neutral)) !important;
 }
 
-.dark h1 a:hover,
-.dark h2 a:hover,
-.dark h3 a:hover,
-.dark .article-title:hover {
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+.article-title:hover {
   text-shadow: 
     0 0 10px rgba(var(--color-primary-500), 0.65),
     0 0 20px rgba(var(--color-secondary-500), 0.35);
@@ -296,20 +301,20 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* High-tech border accent on article section titles */
-.dark .prose h2 {
+.prose h2 {
   border-left: 3px solid rgb(var(--color-primary-500));
   padding-left: 0.85rem;
   text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.22);
 }
-.dark .prose h3 {
+.prose h3 {
   border-left: 2px dashed rgb(var(--color-secondary-500));
   padding-left: 0.6rem;
   text-shadow: 0 0 8px rgba(var(--color-secondary-500), 0.22);
 }
 
 /* Cybernetic brand title flicker on menu hover */
-.dark a[href*="/"]:hover span.font-bold,
-.dark a[href*="/"]:hover .text-base {
+a[href*="/"]:hover span.font-bold,
+a[href*="/"]:hover .text-base {
   animation: brand-neon-flicker 4s infinite alternate;
 }
 
@@ -335,17 +340,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ── Article Images Glowing HUD Effect ───────── */
-.dark .prose img,
-.dark .photo-single img,
-.dark .photo-collage .photo-item img {
+.prose img,
+.photo-single img,
+.photo-collage .photo-item img {
   border: 1px solid rgba(var(--color-primary-500), 0.16) !important;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.4), 0 0 8px rgba(var(--color-primary-500), 0.05) !important;
   transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
 }
 
-.dark .prose img:hover,
-.dark .photo-single img:hover,
-.dark .photo-collage .photo-item img:hover {
+.prose img:hover,
+.photo-single img:hover,
+.photo-collage .photo-item img:hover {
   border-color: rgba(var(--color-primary-500), 0.75) !important;
   box-shadow: 
     0 0 22px rgba(var(--color-primary-500), 0.25), 
@@ -355,7 +360,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ── Code Terminal HUD styling ────────────────── */
-.dark pre {
+pre {
   border: 1px solid rgba(var(--color-primary-500), 0.22) !important;
   background: rgba(var(--color-neutral-900), 0.75) !important;
   box-shadow: 
@@ -363,34 +368,34 @@ h1, h2, h3, h4, h5, h6 {
     inset 0 0 10px rgba(var(--color-primary-500), 0.04) !important;
   backdrop-filter: blur(6px);
 }
-.dark code {
+code {
   color: rgb(var(--color-secondary-300)) !important;
 }
-.dark pre code {
+pre code {
   color: inherit !important;
 }
 
 /* ── Scrollbar ───────────────────────────────── */
-.dark ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: rgba(var(--color-primary-500), 0.3);
   border-radius: 4px;
 }
-.dark ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
   background: rgba(var(--color-primary-500), 0.6);
   box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.5);
 }
-.dark ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: rgba(var(--color-neutral-900), 0.9);
 }
 
 /* ── Selection highlight → neon blue ──────────────── */
-.dark ::selection {
+::selection {
   background: rgba(var(--color-secondary-500), 0.38);
   color: rgb(var(--color-neutral-50));
 }
 
 /* ── Symmetrical linear gradient dividers ─────────── */
-.dark hr {
+hr {
   border: none;
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(var(--color-primary-500), 0.4), transparent);
