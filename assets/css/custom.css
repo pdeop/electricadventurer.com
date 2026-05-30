@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ── Vibrant Voltage: Cyberpunk Electric Style ── */
 
-/* CRT Scanline effect overlay on body */
+/* CRT Scanline effect overlay on body with radar sweep */
 body::before {
   content: "";
   position: fixed;
@@ -76,14 +76,28 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(
-    rgba(18, 16, 16, 0) 50%,
-    rgba(0, 0, 0, 0.22) 50%
-  );
-  background-size: 100% 4px;
+  background: 
+    linear-gradient(
+      rgba(18, 16, 16, 0) 50%,
+      rgba(0, 0, 0, 0.22) 50%
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 255, 136, 0) 0%,
+      rgba(0, 255, 136, 0.03) 10%,
+      rgba(0, 255, 136, 0) 20%
+    );
+  background-size: 100% 4px, 100% 100vh;
+  background-repeat: repeat, no-repeat;
   z-index: 9999;
   pointer-events: none;
-  opacity: 0.075;
+  opacity: 0.085;
+  animation: scanline-sweep 18s linear infinite;
+}
+
+@keyframes scanline-sweep {
+  0% { background-position: 0 0, 0 -100vh; }
+  100% { background-position: 0 0, 0 100vh; }
 }
 
 /* Running high-voltage current flow bar at the top of the screen */
@@ -193,6 +207,25 @@ a[href*="/categories/"]:hover span span,
   transform: translateY(-1.5px);
 }
 
+/* Live status pulse node in article meta */
+.article-meta::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: rgb(var(--color-primary-500));
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  box-shadow: 0 0 8px rgb(var(--color-primary-500)), 0 0 15px rgb(var(--color-secondary-500));
+  animation: node-pulse 1.8s infinite ease-in-out;
+  vertical-align: middle;
+}
+
+@keyframes node-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; box-shadow: 0 0 6px rgba(var(--color-primary-500), 0.5); }
+  50% { transform: scale(1.4); opacity: 1; box-shadow: 0 0 12px rgb(var(--color-primary-500)), 0 0 20px rgb(var(--color-secondary-500)); }
+}
+
 /* Article meta (date, reading time) → muted neutral */
 .article-meta,
 .article-meta * {
@@ -284,20 +317,46 @@ div[class*="recent"] a:hover::after {
   box-shadow: inset 0 0 20px rgba(var(--color-secondary-500), 0.2) !important;
 }
 
-/* ── Heading glow & hover glow ───────────────── */
+/* ── Heading glow & hover glitch ───────────────── */
 h1, h2, h3 {
   text-shadow: 0 0 6px rgba(var(--color-primary-500), 0.12);
   color: rgb(var(--color-neutral)) !important;
 }
 
+/* Cyberpunk Text Glitch Effect on link hover */
 h1 a:hover,
 h2 a:hover,
 h3 a:hover,
 .article-title:hover {
-  text-shadow: 
-    0 0 10px rgba(var(--color-primary-500), 0.65),
-    0 0 20px rgba(var(--color-secondary-500), 0.35);
-  color: rgb(var(--color-primary-500)) !important;
+  animation: text-glitch 0.3s steps(2) infinite;
+  color: #ffffff !important;
+}
+
+@keyframes text-glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(var(--color-primary-500), 0.75),
+                 -0.05em -0.025em 0 rgba(var(--color-secondary-500), 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(var(--color-primary-500), 0.75),
+                 0.025em 0.05em 0 rgba(var(--color-secondary-500), 0.75);
+  }
+  49% {
+    text-shadow: 0.05em 0 0 rgba(var(--color-primary-500), 0.75),
+                 -0.05em -0.025em 0 rgba(var(--color-secondary-500), 0.75);
+  }
+  50% {
+    text-shadow: -0.025em 0.025em 0 rgba(var(--color-primary-500), 0.75),
+                 0.05em 0.025em 0 rgba(var(--color-secondary-500), 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 rgba(var(--color-primary-500), 0.75),
+                 -0.025em 0.05em 0 rgba(var(--color-secondary-500), 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(var(--color-primary-500), 0.75),
+                 -0.025em -0.025em 0 rgba(var(--color-secondary-500), 0.75);
+  }
 }
 
 /* High-tech border accent on article section titles */
@@ -337,6 +396,27 @@ a[href*="/"]:hover .text-base {
       0 0 35px rgba(var(--color-secondary-500), 0.3);
     color: #ffffff !important;
   }
+}
+
+/* ── Glowing Nav & Social SVGs ───────────────── */
+nav a svg:hover,
+#search-button svg:hover,
+#search-button-mobile svg:hover,
+footer a svg:hover {
+  filter: drop-shadow(0 0 6px rgb(var(--color-primary-500))) drop-shadow(0 0 12px rgb(var(--color-secondary-500)));
+  color: rgb(var(--color-primary-500)) !important;
+  transition: filter 0.25s ease, color 0.25s ease;
+}
+
+/* ── Interactive Controls & Buttons ──────────── */
+button:hover,
+input:focus,
+.btn:hover,
+.pagination a:hover {
+  box-shadow: 0 0 15px rgba(var(--color-primary-500), 0.4), inset 0 0 8px rgba(var(--color-primary-500), 0.15) !important;
+  border-color: rgba(var(--color-primary-500), 0.75) !important;
+  transform: scale(1.02);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 /* ── Article Images Glowing HUD Effect ───────── */
@@ -394,11 +474,28 @@ pre code {
   color: rgb(var(--color-neutral-50));
 }
 
-/* ── Symmetrical linear gradient dividers ─────────── */
+/* ── Symmetrical linear gradient dividers with laser charge sliding animation ── */
 hr {
+  position: relative;
   border: none;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(var(--color-primary-500), 0.4), transparent);
-  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.2);
+  background: linear-gradient(90deg, transparent, rgba(var(--color-primary-500), 0.25), transparent);
   margin: 3rem 0;
+  overflow: hidden;
+}
+
+hr::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50%;
+  height: 100%;
+  width: 30%;
+  background: linear-gradient(90deg, transparent, rgb(var(--color-secondary-500)), rgb(var(--color-primary-500)), transparent);
+  animation: charge-slide 4s linear infinite;
+}
+
+@keyframes charge-slide {
+  0% { left: -50%; }
+  100% { left: 150%; }
 }
