@@ -1,38 +1,38 @@
 :root {
-  /* Neutrals — obsidian charcoal/slate dark background */
-  --color-neutral: 248, 250, 252;
-  --color-neutral-50: 248, 250, 252;
-  --color-neutral-100: 241, 245, 249;
-  --color-neutral-200: 226, 232, 240;
-  --color-neutral-300: 203, 213, 225;
-  --color-neutral-400: 148, 163, 184;
-  --color-neutral-500: 100, 116, 139;
-  --color-neutral-600: 71, 85, 105;
-  --color-neutral-700: 51, 65, 85;
-  --color-neutral-800: 30, 41, 59;
-  --color-neutral-900: 15, 23, 42;        /* Core dark slate-gray background */
+  /* Neutrals — pure obsidian black/grey shades */
+  --color-neutral: 249, 250, 251;
+  --color-neutral-50: 249, 250, 251;
+  --color-neutral-100: 243, 244, 246;
+  --color-neutral-200: 229, 231, 235;
+  --color-neutral-300: 209, 213, 219;
+  --color-neutral-400: 156, 163, 175;
+  --color-neutral-500: 107, 114, 128;
+  --color-neutral-600: 75, 85, 99;
+  --color-neutral-700: 31, 41, 55;
+  --color-neutral-800: 17, 24, 39;
+  --color-neutral-900: 3, 7, 18;          /* Pure Obsidian Void Black */
 
-  /* Primary — high-voltage emerald electric green */
-  --color-primary-50: 240, 253, 250;
-  --color-primary-100: 204, 251, 241;
-  --color-primary-200: 153, 246, 228;
-  --color-primary-300: 94, 234, 212;
-  --color-primary-400: 52, 211, 153;
-  --color-primary-500: 16, 185, 129;      /* Core Electric Green */
-  --color-primary-600: 5, 150, 105;
-  --color-primary-700: 4, 120, 87;
-  --color-primary-800: 6, 95, 70;
-  --color-primary-900: 4, 78, 56;
+  /* Primary — high-voltage electric neon green */
+  --color-primary-50: 224, 255, 241;
+  --color-primary-100: 186, 255, 221;
+  --color-primary-200: 128, 255, 195;
+  --color-primary-300: 51, 255, 164;
+  --color-primary-400: 0, 255, 142;
+  --color-primary-500: 0, 255, 136;       /* Core Neon Electric Green/Teal (#00ff88) */
+  --color-primary-600: 0, 214, 111;
+  --color-primary-700: 0, 168, 85;
+  --color-primary-800: 0, 122, 60;
+  --color-primary-900: 0, 92, 44;
 
-  /* Secondary — electric / digital blue */
-  --color-secondary-50: 239, 246, 255;
-  --color-secondary-100: 219, 234, 254;
-  --color-secondary-200: 191, 219, 254;
-  --color-secondary-300: 147, 197, 253;
-  --color-secondary-400: 96, 165, 250;
-  --color-secondary-500: 59, 130, 246;    /* Core Electric Blue */
-  --color-secondary-600: 37, 99, 235;
-  --color-secondary-700: 29, 78, 216;
-  --color-secondary-800: 30, 64, 175;
-  --color-secondary-900: 30, 58, 138;
+  /* Secondary — neon electric cyan/blue */
+  --color-secondary-50: 224, 252, 255;
+  --color-secondary-100: 186, 248, 255;
+  --color-secondary-200: 128, 241, 255;
+  --color-secondary-300: 51, 231, 255;
+  --color-secondary-400: 0, 221, 255;
+  --color-secondary-500: 0, 216, 255;     /* Core Neon Electric Cyan/Blue (#00d8ff) */
+  --color-secondary-600: 0, 172, 204;
+  --color-secondary-700: 0, 132, 153;
+  --color-secondary-800: 0, 96, 110;
+  --color-secondary-900: 0, 72, 82;
 }

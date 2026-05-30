@@ -7,32 +7,80 @@
 >
   <defs>
     <linearGradient id="grad-prim-compass-bolt" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stopColor="#10b981" />
-      <stop offset="100%" stopColor="#3b82f6" />
+      <stop offset="0%" stop-color="#00ff88" />
+      <stop offset="100%" stop-color="#00d8ff" />
     </linearGradient>
     <linearGradient id="grad-acc-compass-bolt" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stopColor="#3b82f6" />
-      <stop offset="100%" stopColor="#ffffff" stopOpacity="0.4" />
+      <stop offset="0%" stop-color="#00d8ff" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
     </linearGradient>
   </defs>
+
+  <style>
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes flicker-charge {
+      0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+        opacity: 0.95;
+        filter: drop-shadow(0 0 3px #00d8ff) drop-shadow(0 0 8px #00ff88);
+      }
+      20%, 24%, 55% {
+        opacity: 0.45;
+        filter: drop-shadow(0 0 1px #00d8ff);
+      }
+      22% {
+        opacity: 1;
+        filter: drop-shadow(0 0 6px #00d8ff) drop-shadow(0 0 16px #00ff88) drop-shadow(0 0 25px #00ff88);
+      }
+    }
+    @keyframes pulse-glow {
+      0%, 100% { 
+        transform: scale(1);
+        filter: drop-shadow(0 0 2px #00ff88);
+        opacity: 0.8;
+      }
+      50% { 
+        transform: scale(1.2);
+        filter: drop-shadow(0 0 6px #00ff88) drop-shadow(0 0 12px #00d8ff);
+        opacity: 1;
+      }
+    }
+    .animated-ring {
+      transform-origin: 80px 80px;
+      animation: spin-slow 25s linear infinite;
+    }
+    .animated-bolt {
+      transform-origin: 80px 80px;
+      animation: flicker-charge 5s ease-in-out infinite;
+    }
+    .animated-spark {
+      transform-origin: 78px 80px;
+      animation: pulse-glow 2.5s ease-in-out infinite;
+    }
+  </style>
+
   <!-- Outer Compass Ring -->
   <circle
+    class="animated-ring"
     cx="80"
     cy="80"
     r="68"
     fill="none"
-    stroke="#3b82f6"
-    strokeWidth="2"
-    strokeDasharray="2,2"
-    opacity="0.3"
+    stroke="#00d8ff"
+    stroke-width="2"
+    stroke-dasharray="6,4"
+    opacity="0.5"
   />
   <circle
     cx="80"
     cy="80"
     r="74"
     fill="none"
-    stroke="#3b82f6"
-    strokeWidth="4"
+    stroke="#00d8ff"
+    stroke-width="3"
+    opacity="0.8"
   />
   
   <!-- Mountain Backing -->
@@ -44,21 +92,28 @@
   <path
     d="M 60 65 L 80 85 L 75 115 L 20 115 Z"
     fill="url(#grad-prim-compass-bolt)"
-    opacity="0.9"
+    opacity="0.95"
   />
   
   <!-- Compass ticks -->
-  <line x1="80" y1="60" x2="80" y2="52" stroke="#3b82f6" strokeWidth="3" />
-  <line x1="80" y1="100" x2="80" y2="108" stroke="#1e293b" strokeWidth="3" />
-  <line x1="60" y1="80" x2="52" y2="80" stroke="#1e293b" strokeWidth="3" />
-  <line x1="100" y1="80" x2="108" y2="80" stroke="#1e293b" strokeWidth="3" />
+  <line x1="80" y1="60" x2="80" y2="52" stroke="#00d8ff" stroke-width="3" />
+  <line x1="80" y1="100" x2="80" y2="108" stroke="#1e293b" stroke-width="3" />
+  <line x1="60" y1="80" x2="52" y2="80" stroke="#1e293b" stroke-width="3" />
+  <line x1="100" y1="80" x2="108" y2="80" stroke="#1e293b" stroke-width="3" />
 
   <!-- Glowing Charge Bolt Cutting Across -->
   <path
+    class="animated-bolt"
     d="M 90 30 L 55 85 L 75 85 L 60 135 L 105 75 L 85 75 Z"
     fill="url(#grad-acc-compass-bolt)"
   />
   
   <!-- Core Star / Spark Center -->
-  <circle cx="78" cy="80" r="4" fill="#10b981" />
+  <circle 
+    class="animated-spark" 
+    cx="78" 
+    cy="80" 
+    r="4" 
+    fill="#00ff88" 
+  />
 </svg>

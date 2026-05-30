@@ -66,32 +66,98 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
 }
 
-/* ── Vibrant Voltage: Electric Green (Primary) + Electric Blue (Secondary) ── */
+/* ── Vibrant Voltage: Cyberpunk Electric Style ── */
 
-/* Pulsing glow effect for the homepage profile logo */
+/* CRT Scanline effect overlay on dark body */
+.dark body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%,
+    rgba(0, 0, 0, 0.22) 50%
+  );
+  background-size: 100% 4px;
+  z-index: 9999;
+  pointer-events: none;
+  opacity: 0.075;
+}
+
+/* Running high-voltage current flow bar at the top of the screen */
+.dark body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3.5px;
+  background: linear-gradient(90deg, 
+    rgba(0, 255, 136, 1) 0%, 
+    rgba(0, 216, 255, 1) 50%, 
+    rgba(0, 255, 136, 1) 100%
+  );
+  background-size: 200% 100%;
+  animation: electric-current-flow 4s linear infinite;
+  z-index: 10000;
+  box-shadow: 
+    0 0 12px rgba(0, 255, 136, 0.75), 
+    0 0 25px rgba(0, 216, 255, 0.45);
+  pointer-events: none;
+}
+
+@keyframes electric-current-flow {
+  0% { background-position: 0% 50%; }
+  100% { background-position: -200% 50%; }
+}
+
+/* HUD Cyber Grid Background with twin radial glowing ambient lights */
+.dark body {
+  background-color: rgb(var(--color-neutral-900)) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(var(--color-primary-500), 0.11), transparent 55%),
+    radial-gradient(circle at 100% 85%, rgba(var(--color-secondary-500), 0.08), transparent 50%),
+    linear-gradient(rgba(var(--color-primary-500), 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--color-primary-500), 0.018) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 45px 45px, 45px 45px;
+  background-position: top center, bottom right, center top, center top;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Pulsing glow effect for the homepage profile logo wrapper */
 .h-36.w-36.rounded-full {
   border: 2.5px solid rgb(var(--color-primary-500));
-  box-shadow: 0 0 15px rgba(var(--color-primary-500), 0.3);
-  animation: pulse-glow-logo 3s infinite alternate ease-in-out;
+  box-shadow: 
+    0 0 15px rgba(var(--color-primary-500), 0.35),
+    0 0 30px rgba(var(--color-secondary-500), 0.15);
+  animation: pulse-glow-logo 3.5s infinite alternate ease-in-out;
   background-color: rgb(var(--color-neutral-900)) !important;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
   padding: 4px;
 }
 .h-36.w-36.rounded-full:hover {
   border-color: rgb(var(--color-secondary-500));
-  box-shadow: 0 0 25px rgba(var(--color-secondary-500), 0.55), 0 0 45px rgba(var(--color-primary-500), 0.25);
-  transform: scale(1.05) rotate(5deg);
+  box-shadow: 
+    0 0 28px rgba(var(--color-secondary-500), 0.65), 
+    0 0 50px rgba(var(--color-primary-500), 0.45);
+  transform: scale(1.08) rotate(3deg);
 }
 
 @keyframes pulse-glow-logo {
   0% {
-    box-shadow: 0 0 12px rgba(var(--color-primary-500), 0.35), 0 0 5px rgba(var(--color-secondary-500), 0.1);
+    box-shadow: 
+      0 0 12px rgba(var(--color-primary-500), 0.35), 
+      0 0 25px rgba(var(--color-secondary-500), 0.15);
   }
   100% {
-    box-shadow: 0 0 22px rgba(var(--color-primary-500), 0.55), 0 0 30px rgba(var(--color-secondary-500), 0.3);
+    box-shadow: 
+      0 0 25px rgba(var(--color-primary-500), 0.6), 
+      0 0 45px rgba(var(--color-secondary-500), 0.35);
   }
 }
-
 
 /* Monospace stats/badges */
 .badge,
@@ -101,19 +167,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Share Tech Mono', monospace;
 }
 
-/* Tags / taxonomy pills → neon magenta/cyan */
+/* Tags / taxonomy pills → high-voltage electric neon borders and glow hover */
 .dark a[href*="/tags/"] span span,
 .dark a[href*="/categories/"] span span,
 .dark .post-tags a {
-  color: rgba(var(--color-secondary-500), 0.85) !important;
-  border-color: rgba(var(--color-secondary-500), 0.2) !important;
+  background: rgba(var(--color-neutral-800), 0.45) !important;
+  color: rgba(var(--color-primary-500), 0.85) !important;
+  border: 1px solid rgba(var(--color-primary-500), 0.25) !important;
+  text-shadow: 0 0 2px rgba(var(--color-primary-500), 0.3);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 .dark a[href*="/tags/"]:hover span span,
 .dark a[href*="/categories/"]:hover span span,
 .dark .post-tags a:hover {
-  background: rgba(var(--color-secondary-500), 0.08) !important;
-  border-color: rgba(var(--color-secondary-500), 0.45) !important;
-  box-shadow: 0 0 8px rgba(var(--color-secondary-500), 0.3);
+  background: rgba(var(--color-primary-500), 0.08) !important;
+  border-color: rgba(var(--color-primary-500), 0.85) !important;
+  color: rgb(var(--color-primary-500)) !important;
+  box-shadow: 
+    0 0 15px rgba(var(--color-primary-500), 0.45),
+    inset 0 0 8px rgba(var(--color-primary-500), 0.1);
+  transform: translateY(-1.5px);
 }
 
 /* Article meta (date, reading time) → muted neutral */
@@ -125,18 +198,18 @@ h1, h2, h3, h4, h5, h6 {
 /* In-body links → neon cyan underline and text glow on hover */
 .dark .prose a:not(.badge) {
   text-decoration-color: rgba(var(--color-primary-500), 0.35) !important;
-  transition: all 0.2s ease;
+  transition: all 0.25s ease;
 }
 .dark .prose a:not(.badge):hover {
-  text-decoration-color: rgba(var(--color-primary-500), 0.9) !important;
+  text-decoration-color: rgba(var(--color-primary-500), 0.95) !important;
   color: rgb(var(--color-primary-500)) !important;
-  text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.4);
+  text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.45);
 }
 
-/* Table of contents → neon magenta on hover */
+/* Table of contents → neon blue on hover */
 .dark #TableOfContents a:hover {
   color: rgb(var(--color-secondary-500)) !important;
-  text-shadow: 0 0 5px rgba(var(--color-secondary-500), 0.3);
+  text-shadow: 0 0 6px rgba(var(--color-secondary-500), 0.4);
 }
 
 /* Breadcrumbs → muted neutral */
@@ -147,31 +220,46 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(var(--color-secondary-500)) !important;
 }
 
-/* Pagination → neon cyan active */
+/* Pagination → neon green active */
 .dark .pagination .active a {
   background: rgba(var(--color-primary-500), 0.12) !important;
-  border-color: rgba(var(--color-primary-500), 0.45) !important;
+  border-color: rgba(var(--color-primary-500), 0.6) !important;
   color: rgb(var(--color-primary-500)) !important;
-  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.3);
+  box-shadow: 0 0 12px rgba(var(--color-primary-500), 0.4);
 }
 
-/* Search highlight → neon magenta */
+/* Search highlight → neon blue */
 .dark mark, .dark .search-result mark {
-  background: rgba(var(--color-secondary-500), 0.22) !important;
+  background: rgba(var(--color-secondary-500), 0.25) !important;
   color: rgb(var(--color-neutral-50)) !important;
 }
 
-/* ── Card glow (Neon Cyan border + dual halo) ─────── */
+/* ── Card glow (Neon green border + dual halo + inner cyber glow) ─────── */
 .dark article[class*="card"],
 .dark .card,
 .dark div[class*="recent"] a,
 .dark .taxonomy-card,
 .dark .category-card {
-  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
-  border: 1px solid rgba(var(--color-primary-500), 0.15);
-  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.04);
-  background: rgba(var(--color-neutral-900), 0.45) !important;
-  backdrop-filter: blur(8px);
+  position: relative;
+  transition: box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  border: 1px solid rgba(var(--color-primary-500), 0.16);
+  box-shadow: 0 0 10px rgba(var(--color-primary-500), 0.02);
+  background: rgba(var(--color-neutral-900), 0.6) !important;
+  backdrop-filter: blur(10px);
+}
+
+.dark article[class*="card"]::after,
+.dark .card::after,
+.dark div[class*="recent"] a::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: inset 0 0 12px rgba(var(--color-secondary-500), 0.0);
+  transition: box-shadow 0.35s ease;
 }
 
 .dark article[class*="card"]:hover,
@@ -179,35 +267,133 @@ h1, h2, h3, h4, h5, h6 {
 .dark div[class*="recent"] a:hover,
 .dark .taxonomy-card:hover,
 .dark .category-card:hover {
-  border-color: rgba(var(--color-primary-500), 0.45);
+  border-color: rgba(var(--color-primary-500), 0.85) !important;
   box-shadow:
-    0 0 15px rgba(var(--color-primary-500), 0.25),
-    0 0 35px rgba(var(--color-secondary-500), 0.12);
-  transform: translateY(-2px);
+    0 0 20px rgba(var(--color-primary-500), 0.35),
+    0 0 40px rgba(var(--color-secondary-500), 0.18) !important;
+  transform: translateY(-4px) scale(1.008);
 }
 
-/* ── Heading hover → neon cyan glow ───────────────── */
+.dark article[class*="card"]:hover::after,
+.dark .card:hover::after,
+.dark div[class*="recent"] a:hover::after {
+  box-shadow: inset 0 0 20px rgba(var(--color-secondary-500), 0.2) !important;
+}
+
+/* ── Heading glow & hover glow ───────────────── */
+.dark h1, .dark h2, .dark h3 {
+  text-shadow: 0 0 6px rgba(var(--color-primary-500), 0.12);
+}
+
 .dark h1 a:hover,
 .dark h2 a:hover,
 .dark h3 a:hover,
 .dark .article-title:hover {
-  text-shadow: 0 0 10px rgba(var(--color-primary-500), 0.55);
+  text-shadow: 
+    0 0 10px rgba(var(--color-primary-500), 0.65),
+    0 0 20px rgba(var(--color-secondary-500), 0.35);
+  color: rgb(var(--color-primary-500)) !important;
+}
+
+/* High-tech border accent on article section titles */
+.dark .prose h2 {
+  border-left: 3px solid rgb(var(--color-primary-500));
+  padding-left: 0.85rem;
+  text-shadow: 0 0 8px rgba(var(--color-primary-500), 0.22);
+}
+.dark .prose h3 {
+  border-left: 2px dashed rgb(var(--color-secondary-500));
+  padding-left: 0.6rem;
+  text-shadow: 0 0 8px rgba(var(--color-secondary-500), 0.22);
+}
+
+/* Cybernetic brand title flicker on menu hover */
+.dark a[href*="/"]:hover span.font-bold,
+.dark a[href*="/"]:hover .text-base {
+  animation: brand-neon-flicker 4s infinite alternate;
+}
+
+@keyframes brand-neon-flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow: 
+      0 0 5px rgba(var(--color-primary-500), 0.4),
+      0 0 15px rgba(var(--color-primary-500), 0.2),
+      0 0 25px rgba(var(--color-secondary-500), 0.15);
+    color: rgb(var(--color-primary-500)) !important;
+  }
+  20%, 24%, 55% {
+    text-shadow: none;
+    opacity: 0.8;
+  }
+  22% {
+    text-shadow: 
+      0 0 10px rgba(var(--color-primary-500), 0.75),
+      0 0 25px rgba(var(--color-primary-500), 0.5),
+      0 0 35px rgba(var(--color-secondary-500), 0.3);
+    color: #ffffff !important;
+  }
+}
+
+/* ── Article Images Glowing HUD Effect ───────── */
+.dark .prose img,
+.dark .photo-single img,
+.dark .photo-collage .photo-item img {
+  border: 1px solid rgba(var(--color-primary-500), 0.16) !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4), 0 0 8px rgba(var(--color-primary-500), 0.05) !important;
+  transition: border-color 0.35s ease, box-shadow 0.35s ease, transform 0.35s ease;
+}
+
+.dark .prose img:hover,
+.dark .photo-single img:hover,
+.dark .photo-collage .photo-item img:hover {
+  border-color: rgba(var(--color-primary-500), 0.75) !important;
+  box-shadow: 
+    0 0 22px rgba(var(--color-primary-500), 0.25), 
+    0 0 40px rgba(var(--color-secondary-500), 0.15),
+    0 8px 30px rgba(0, 0, 0, 0.5) !important;
+  transform: translateY(-2px);
+}
+
+/* ── Code Terminal HUD styling ────────────────── */
+.dark pre {
+  border: 1px solid rgba(var(--color-primary-500), 0.22) !important;
+  background: rgba(var(--color-neutral-900), 0.75) !important;
+  box-shadow: 
+    0 0 15px rgba(0, 0, 0, 0.5), 
+    inset 0 0 10px rgba(var(--color-primary-500), 0.04) !important;
+  backdrop-filter: blur(6px);
+}
+.dark code {
+  color: rgb(var(--color-secondary-300)) !important;
+}
+.dark pre code {
+  color: inherit !important;
 }
 
 /* ── Scrollbar ───────────────────────────────── */
 .dark ::-webkit-scrollbar-thumb {
-  background: rgba(var(--color-primary-500), 0.25);
+  background: rgba(var(--color-primary-500), 0.3);
   border-radius: 4px;
 }
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: rgba(var(--color-primary-500), 0.5);
+  background: rgba(var(--color-primary-500), 0.6);
+  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.5);
 }
 .dark ::-webkit-scrollbar-track {
-  background: rgba(var(--color-neutral-900), 0.85);
+  background: rgba(var(--color-neutral-900), 0.9);
 }
 
-/* ── Selection highlight → neon magenta ──────────────── */
+/* ── Selection highlight → neon blue ──────────────── */
 .dark ::selection {
-  background: rgba(var(--color-secondary-500), 0.35);
+  background: rgba(var(--color-secondary-500), 0.38);
   color: rgb(var(--color-neutral-50));
+}
+
+/* ── Symmetrical linear gradient dividers ─────────── */
+.dark hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(var(--color-primary-500), 0.4), transparent);
+  box-shadow: 0 0 8px rgba(var(--color-primary-500), 0.2);
+  margin: 3rem 0;
 }
