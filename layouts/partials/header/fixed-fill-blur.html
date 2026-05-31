@@ -1,22 +1,17 @@
-<div class="min-h-[100px] md:min-h-[110px]"></div>
-<div class="fixed inset-x-0 top-3 z-100 px-6 sm:px-14 md:px-24 lg:px-32 w-full flex justify-center pointer-events-none">
-  <div
-    class="w-full max-w-7xl pointer-events-auto rounded-2xl border border-primary-500/18 bg-neutral-950/65 backdrop-blur-lg shadow-lg hover:border-primary-500/50 hover:shadow-[0_0_20px_rgba(var(--color-primary-500),0.25)] transition-all duration-300 relative overflow-hidden">
-    <!-- Active background blur on scroll -->
-    <div
-      id="menu-blur"
-      class="absolute opacity-0 inset-0 single_hero_background nozoom backdrop-blur-2xl bg-neutral-950/40 -z-10 rounded-2xl"></div>
-    
-    <div class="relative m-auto leading-7 px-4 py-2 sm:px-6">
-      {{ partial "header/basic.html" . }}
-    </div>
+{{/* Edge-to-edge top bar — transparent at top, blurs + neon border on scroll.
+     Self-contained styling (see .ea-topbar in custom.css). */}}
+<div class="ea-nav-spacer"></div>
+<header class="ea-topbar" id="ea-topbar">
+  <div class="ea-topbar-inner">
+    {{ partial "header/basic.html" . }}
   </div>
-</div>
-
-{{ $backgroundBlur := resources.Get "js/background-blur.js" }}
-{{ $backgroundBlur = $backgroundBlur | resources.Minify | resources.Fingerprint (.Site.Params.fingerprintAlgorithm | default "sha512") }}
-<script
-  type="text/javascript"
-  src="{{ $backgroundBlur.RelPermalink }}"
-  integrity="{{ $backgroundBlur.Data.Integrity }}"
-  data-blur-id="menu-blur"></script>
+</header>
+<script>
+  (function () {
+    var bar = document.getElementById("ea-topbar");
+    if (!bar) return;
+    var sync = function () { bar.classList.toggle("is-scrolled", window.scrollY > 8); };
+    sync();
+    window.addEventListener("scroll", sync, { passive: true });
+  })();
+</script>
