@@ -6,7 +6,7 @@ description: "3,000 miles round trip, three mountain passes, zero gas, one very 
 tags: ["ev", "road-trip", "rivian", "trailspark", "moab", "vail-pass", "adventure"]
 categories: ["Electric Vehicles"]
 authors: ["electric-adventurer"]
-showHero: false
+showHero: true
 ---
 
 3,000 miles. Three mountain passes. 11,113 feet altitude. Zero gas stops. One very good dog. Let's go!!
