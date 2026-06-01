@@ -6,7 +6,7 @@ description: "How I built a production-ready serverless platform on AWS for docu
 tags: ["trailspark", "aws", "serverless", "lambda", "dynamodb", "ai-coding", "cloudfront", "waf", "side-project"]
 categories: ["Technology"]
 authors: ["electric-adventurer"]
-showHero: false
+showHero: true
 ---
 
 # Building Trail Spark: How AI and Serverless Built a Resilient EV Road Trip App
