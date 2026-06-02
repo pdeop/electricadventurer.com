@@ -22,3 +22,8 @@ yarn.lock
 # Raw assets
 /assets/img/
 
+# Theme demo content — never vendor this (bloat + ships example API keys)
+themes/*/exampleSite/
+# Unused themes
+themes/PaperMod/
+
