@@ -9,7 +9,7 @@
    ========================================================================= */
 
 /* ── Fonts ──────────────────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap');
 
 :root {
   --ea-display: 'Playfair Display', Georgia, serif;
@@ -85,6 +85,8 @@ h1, h2, h3, h4, h5, h6 {
 .ea-topbar a:hover { color: rgb(var(--color-primary-500)); }
 .ea-topbar .logo, .ea-topbar .logo svg { display: block; height: 34px; width: 34px; }
 .ea-topbar .logo { flex-shrink: 0; }
+/* Brand title — Chakra Petch wordmark */
+.ea-topbar a.truncate { font-family: 'Chakra Petch', sans-serif; font-weight: 700; font-size: 1.2rem; letter-spacing: 0.01em; color: rgb(var(--color-neutral-50)); }
 /* Menu items in Space Mono for the editorial feel */
 .ea-topbar .main-menu a span { font-family: var(--ea-mono); font-size: 0.82rem; letter-spacing: 0.04em; }
 
