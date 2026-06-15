@@ -23,6 +23,16 @@ showTableOfContents: false
   <span class="ls-chip">R1T Owner Perspective</span>
 </div>
 
+<div class="ls-stats">
+  <div class="ls-stats-head"><span>Trip Stats</span><span>Mixed highway &amp; city</span></div>
+  <div class="ls-stats-grid">
+    <div><div class="ls-stat-num">158</div><div class="ls-stat-cap">Miles driven</div></div>
+    <div><div class="ls-stat-num">76.6</div><div class="ls-stat-cap">kWh consumed</div></div>
+    <div><div class="ls-stat-num">2.1</div><div class="ls-stat-cap">mi / kWh</div></div>
+    <div><div class="ls-stat-num">83→15<small>%</small></div><div class="ls-stat-cap">State of charge</div></div>
+  </div>
+</div>
+
 <div class="ls-verdict">
   <div class="wins">
     <h3>What Works</h3>
@@ -73,6 +83,8 @@ showTableOfContents: false
 <div class="ls-callout">The sound system was almost on par with Gen 1 Rivian audio. Not what I expected from a rental truck. Ford put real money into the cabin.</div>
 
 <p>The limits show in corners. Push it through a sweeping on-ramp and it reminds you it's body-on-frame: body roll, a hint of float. That's not a flaw; it's the honest physics of what this vehicle is. The R1T handles more like a sport truck. Different mandates.</p>
+
+<p>And then the number that genuinely surprised me. Over 158 miles of <strong>mixed highway and city</strong>, the Lightning returned about <strong>2.1 mi/kWh</strong> — that's actually better than my R1S. It makes sense: the R1S hauls more weight and pushes more air with that SUV profile, and the Standard Range battery means less mass to move. Highway speed usually punishes a slab-sided truck like the F-150, so 2.1 mi/kWh on mixed roads is genuinely impressive. That's right on EPA spec (2.1 mi/kWh combined, 68 MPGe). Ford got the powertrain right — even where the software fell short.</p>
 </section>
 
 <div class="ls-compare">

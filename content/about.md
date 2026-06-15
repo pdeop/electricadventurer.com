@@ -3,6 +3,14 @@ title: "About"
 draft: false
 description: "EV enthusiast and Cascades road tripper. Writing about EV adventures, charging infrastructure, and the EV community."
 showAuthor: false
+showHero: false
+showDate: false
+showReadingTime: false
+showTableOfContents: false
+showBreadcrumbs: false
+showPagination: false
+showRelatedContent: false
+showTaxonomies: false
 ---
 
 I'm an environmentalist who is deeply hopeful about clean technology and the EV transition. We are one with nature. We belong to this incredible planet, and going electric is a key step in aligning our mobility with the ecosystems we love.

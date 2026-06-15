@@ -308,6 +308,18 @@ main > header:first-child h1 { margin-top: 0; }
 .ls-review .ls-verdict .wins li::before { color: var(--lightning); }
 .ls-review .ls-verdict .gaps li::before { color: var(--ember); }
 
+.ls-review .ls-stats { background: var(--steel); border-top: 3px solid var(--lightning); border-radius: var(--ea-radius); overflow: hidden; margin: 2.5rem 0; }
+.ls-review .ls-stats-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 0.85rem 1.25rem; border-bottom: 1px solid rgba(var(--color-secondary-500), 0.12); font-family: var(--ea-mono); font-size: 0.64rem; letter-spacing: 0.2em; text-transform: uppercase; }
+.ls-review .ls-stats-head span:first-child { color: var(--lightning); }
+.ls-review .ls-stats-head span:last-child { color: var(--ice); }
+.ls-review .ls-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+.ls-review .ls-stats-grid > div { text-align: center; padding: 1.4rem 0.6rem; }
+.ls-review .ls-stats-grid > div + div { border-left: 1px solid rgba(var(--color-secondary-500), 0.1); }
+.ls-review .ls-stat-num { font-family: var(--ea-display); font-weight: 900; font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1; color: var(--lightning); }
+.ls-review .ls-stat-num small { font-size: 0.6em; font-weight: 700; }
+.ls-review .ls-stat-cap { font-family: var(--ea-mono); font-size: 0.58rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--mist); margin-top: 0.5rem; }
+@media (max-width: 560px) { .ls-review .ls-stats-grid { grid-template-columns: repeat(2, 1fr); } .ls-review .ls-stats-grid > div:nth-child(3) { border-left: none; } }
+
 .ls-review .ls-label { font-family: var(--ea-mono); font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--ice); display: block; margin-bottom: 0.8rem; }
 .ls-review .ls-callout { border-left: 3px solid var(--lightning); padding: 1.25rem 1.5rem; background: rgba(240,192,64,0.07); margin: 2rem 0; font-style: italic; line-height: 1.65; color: var(--cream); }
 
