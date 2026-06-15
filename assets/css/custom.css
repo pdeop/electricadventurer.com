@@ -67,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 .logo { border-radius: 50%; }
 
 /* ── Floating-pill / edge-to-edge top bar ───────────────────────────── */
-.ea-nav-spacer { height: 60px; }
+.ea-nav-spacer { height: 76px; }
 .ea-topbar {
   position: fixed; top: 0; left: 0; right: 0; z-index: 50;
   background: transparent;
@@ -186,6 +186,14 @@ code { font-family: var(--ea-mono); }
 .ea-btn-ghost { background: transparent; color: rgb(var(--color-primary-500)); border-color: var(--ea-line-hover); }
 .ea-btn-ghost:hover { border-color: rgb(var(--color-primary-500)); box-shadow: none; background: rgba(var(--color-primary-500), 0.08); }
 
+/* Stats strip (under the hero) */
+.ea-stats-band { border-top: 1px solid rgba(var(--color-secondary-500), 0.14); border-bottom: 1px solid rgba(var(--color-secondary-500), 0.14); background: rgba(var(--color-neutral-700), 0.3); }
+.ea-stats { max-width: 72rem; margin: 0 auto; padding: 1.7rem 1.25rem; display: grid; grid-template-columns: repeat(3, 1fr); }
+.ea-stat-item { text-align: center; padding: 0.3rem 0.8rem; }
+.ea-stat-item + .ea-stat-item { border-left: 1px solid rgba(var(--color-secondary-500), 0.12); }
+.ea-stat-num { font-family: var(--ea-display); font-weight: 900; font-size: clamp(1.7rem, 6vw, 3rem); line-height: 1; color: rgb(var(--color-primary-500)); }
+.ea-stat-cap { font-family: var(--ea-mono); font-size: 0.64rem; letter-spacing: 0.16em; text-transform: uppercase; color: rgb(var(--color-neutral-300)); margin-top: 0.55rem; }
+
 .ea-section { max-width: 72rem; margin: 0 auto; padding: 1.5rem 1.25rem 4rem; }
 .ea-section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; }
 .ea-section-head h2 { font-size: 1.5rem; color: rgb(var(--color-neutral-50)); margin: 0; }
@@ -241,7 +249,10 @@ code { font-family: var(--ea-mono); }
 /* =========================================================================
    TOPICS / TAXONOMY pages
    ========================================================================= */
+/* List / taxonomy page headers — clear the fixed nav bar */
 .page-header { max-width: 72rem; margin: 0 auto; padding: 2rem 1.25rem 0.5rem; }
+main > header:first-child { padding-top: 1.5rem; }
+main > header:first-child h1 { margin-top: 0; }
 .page-description { color: rgb(var(--color-neutral-300)); }
 .category-grid { max-width: 72rem; margin: 1rem auto 3rem; padding: 0 1.25rem; display: grid; grid-template-columns: 1fr; gap: 1rem; }
 @media (min-width: 640px) { .category-grid { grid-template-columns: repeat(2, 1fr); } }
