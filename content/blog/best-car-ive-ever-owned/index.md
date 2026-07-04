@@ -14,6 +14,16 @@ A thousand horsepower three-row family SUV that beats a 911 in acceleration and 
 
 ---
 
+## The Short Version
+
+- **What it is:** A quad-motor Rivian R1S. Nearly 1,000 horsepower, three rows, real off-road capability, and the tech sophistication of a Tesla, in a single vehicle that refuses to make you choose between adventure and sense.
+- **The ownership arc:** Preordered in October 2022, took delivery March 2024, then leased an R1T alongside it to test both body styles. The dual-motor truck taught me the quad-motor R1S is the one I actually need.
+- **Why it wins:** It's the first car that works for all of us, Korra included, thanks to pet mode and a quiet cabin. EV road trips through Colorado winters turned charging stops into structure and made me one with the machine. And Rivian actually listens, refining the vehicle over the air based on real owner feedback.
+- **What could be better:** Laggy software, occasional bugs, a flaky 12V battery, and, most seriously, half-shaft durability. Honest flaws, none of them dealbreakers.
+- **The plan:** When my lease ends in September, I'm not shopping. I'm buying a used Gen One quad I already know is exactly what I need.
+
+---
+
 ## Why Nothing Else Existed
 
 For years, I've been caught between two incompatible desires. I love the capability of serious trucks and SUVs, the Bronco, the Wrangler, vehicles built for actual terrain. But I also love technology, efficiency, and not hemorrhaging money at the pump. The problem is simple: nothing combined both. You got adventure or you got sense. You didn't get both.
