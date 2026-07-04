@@ -1,5 +1,5 @@
 ---
-title: "The Best Car I've Ever Owned"
+title: "The Best Car I've Ever Owned: The Rivian R1S"
 date: 2026-06-15
 draft: false
 description: "A thousand-horsepower, three-row family SUV that out-accelerates a 911 and out-climbs a Wrangler shouldn't exist. The Rivian R1S does, and after two and a half years and two Rivians, it's the best car I've ever owned."
