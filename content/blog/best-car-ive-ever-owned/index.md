@@ -40,6 +40,11 @@ Context matters here too: I drive hard and I drive a lot. Seventy to eighty mile
 
 From day one, the R1S delivered on that promise. Nearly a thousand horsepower meant acceleration that felt illegal in a family SUV. The suspension—which started a bit rough, I'll admit—kept improving with each software update. The ground clearance, the approach angles, the ability to haul six people plus a week's worth of gear and still feel composed on a twisty road: it was everything I'd imagined.
 
+<div class="photo-single">
+  <img src="/images/r1s/r1s-aspens.jpg" alt="Rivian R1S parked among golden aspens with mountains behind">
+  <div class="caption">Golden hour in the aspens — a thousand horsepower and three rows, equally at home here and on the school run</div>
+</div>
+
 Pet mode was actually one of the reasons I chose the R1S in the first place. Here's the reality of owning a large dog: you cannot have a car without it. When Korra's in the back and you need to run an errand, climate control isn't optional—it's non-negotiable. Tesla figured this out early. Rivian took it seriously too. Almost no one else has. Rivian had pet mode built in from day one, but the temperature control was limited—you couldn't bring it down far enough for real-world use. Then, shortly after I posted about it on Reddit, an OTA update arrived that let me set it to 63 degrees Fahrenheit. The community had been flagging this for a while—Kyle's reviews highlighted it too—so Rivian was clearly listening. Problem solved. Korra approved.
 
 But here's what really separates Rivian from everyone else, even Tesla. This company actually listens. On Reddit, in forums, directly to customers—Rivian's team is present and responsive. The suspension refinement I mentioned? That came from continuous OTA iterations based on real feedback. The owl unlock sound the community demanded during Halloween? They kept it permanent. You don't just buy a vehicle. You join a feedback loop with a company that actually cares about getting better.
@@ -55,6 +60,11 @@ Let me be direct about something: Korra doesn't just tolerate the R1S. She loves
 That tells you something a spec sheet never could. The R1S has enough space for a large dog to genuinely sprawl out and be comfortable. The ride is smooth enough that she settles within minutes. Pet mode keeps the temperature exactly where it needs to be. And the quietness of an electric vehicle—no engine rumble, no vibration at idle—means she actually relaxes instead of staying alert. It's the first car we've owned where Korra is as at home as we are.
 
 For families with large dogs, the shortlist of vehicles that actually work is short. Tesla and Rivian are on it. Almost everyone else isn't.
+
+<div class="photo-single">
+  <img src="/images/r1s/r1s-korra-mtsi.jpg" alt="Korra the golden doodle with her head out the R1S window, Mount Si behind">
+  <div class="caption">Korra, window down, Mount Si behind — she's never in a hurry to get out</div>
+</div>
 
 ---
 
@@ -74,6 +84,11 @@ I started driving the R1T exclusively in snow mode just to get that constant all
 
 Would I lease another R1T? No. But would I buy a used quad motor version? Absolutely. The dual motor taught me what I actually need in a vehicle, and it's not a compromise. The R1T is a fantastic truck—I just need it with the right powertrain.
 
+<div class="photo-single">
+  <img src="/images/r1s/rivians-night.jpg" alt="The R1S and R1T parked together at night, lights on">
+  <div class="caption">The two-Rivian era — R1S on the left, R1T on the right. Testing both body styles without owning either outright</div>
+</div>
+
 ---
 
 ## What the Road Actually Taught Me
@@ -87,6 +102,11 @@ What I didn't expect when I went electric was how much it would change the way I
 Charging stops aren't interruptions either. They're structure. They're the moment you step out, breathe the air, look around at where you actually are—and let Korra stretch her legs. Some of my best memories from these trips happened at a charger in the middle of nowhere.
 
 And underneath all of it is something I didn't fully appreciate until I was standing in the Colorado mountains watching snow fall on a silent electric vehicle: I got here without burning a single drop of gas. Without polluting the outdoors I came out to see. That alignment—between loving adventure and actually protecting it—is something no other vehicle has given me.
+
+<div class="photo-single">
+  <img src="/images/r1s/r1s-sunset.jpg" alt="Rivian R1S silhouetted against a mountain sunset">
+  <div class="caption">A silent electric vehicle at dusk — I got here without burning a drop of gas</div>
+</div>
 
 ---
 
