@@ -55,7 +55,7 @@ Right after pickup I had a lot of wheel shake. I opened a service ticket, but be
 
 Since then the car has been flawless except for a Highway Assist issue that Rivian is going to look at soon. I've put about 3,000 miles on it already.
 
-The car still had factory warranty left and came with a 7 day return window. After Colorado Springs that mattered more to me than the price did, because it meant the real inspection happened in my own driveway over a week instead of in a parking lot in ten minutes.
+The car still had factory warranty left, which after Colorado Springs mattered to me more than the price did.
 
 ## What I Know Now
 
@@ -71,7 +71,7 @@ Six things, roughly in the order they cost me money.
 
 **5. Buy the warranty, not the car.** On a Gen 1 Rivian, remaining factory coverage is most of the risk calculation. Check the in-service date rather than the model year, because that is what the clock runs from.
 
-**6. Insist on a return window and use it.** Drive it cold, drive it on a highway, charge it to full once, run camp mode and the tire inflator, sit in every seat, and look at the car in daylight on a day you are not excited about it.
+**6. Do the whole inspection before you sign, not after.** Drive it cold, drive it on a highway, run camp mode and the tire inflator, sit in every seat, and look at the car in daylight on a day you are not excited about it.
 
 ## Rivian Care
 
@@ -99,7 +99,6 @@ Walk it in this order. The first four are the ones that caught me.
 - [ ] Screens through a full reboot, plus camera views and the driver assist systems
 - [ ] Air suspension through every height setting
 - [ ] Camp mode, tire inflator, and the onboard outlets
-- [ ] Confirm what the return window is, in writing, before you sign
 
 Print it or screenshot it. Delivery day is a bad day to be remembering a list.
 
