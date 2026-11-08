@@ -15,6 +15,11 @@ Two Rivians, 60k miles between them, and it took me three tries to buy a third o
 ![The Forest Green R1S and the R1T in the driveway](r1s-and-r1t-driveway.jpg)
 *Two Rivians. The R1S here is still on the stock 22 inch Sport Bright wheels it came with.*
 
+Three preorders in three months: Rivian Blue, Red Canyon, Forest Green. I went full RGB before I got a car.
+
+![My Rivian app garage across the three attempts](rivian-app-rgb.jpg)
+*July, August, September. Only the green one made it to Delivery scheduled.*
+
 ## Why I Was Buying Used in the First Place
 
 My R1S lease was ending in September. I had already decided to skip Gen 2 and buy a used Gen 1 quad instead. Someone else already paid the depreciation, and after two and a half years I knew exactly what I needed. I wrote about that decision in [The Best Car I've Ever Owned](https://electricadventurer.com/blog/best-car-ive-ever-owned/) and shared it on r/Rivian ([post](https://www.reddit.com/r/Rivian/s/LpNaT8cmeD), [thread](https://www.reddit.com/r/Rivian/s/9OBRN1VFsd)). Most of those miles came from trips like [A Winter Colorado Electric Adventure in R1S](https://electricadventurer.com/blog/trailspark-seattle-denver-road-trip/).
