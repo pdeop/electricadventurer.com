@@ -61,7 +61,7 @@ The car still had factory warranty left, which after Colorado Springs mattered t
 
 Six things, roughly in the order they cost me money.
 
-**1. A disclosure is not a condition report.** The Colorado Springs listing did disclose hail damage, and said it had been repaired before listing. The word repaired was doing a lot of work. What the listing did not mention was the cracked light bar, the scratched wheels, the paint chips, or the windshield pitting. Read a disclosure as the floor, not the ceiling.
+**1. A disclosure is not a condition report.** The Colorado Springs listing did disclose hail damage and said it had been repaired before listing. It did not mention the cracked light bar, the scratched wheels, the paint chips or the windshield pitting. Assume a listing covers some of what is wrong and not all of it, and ask what else there is.
 
 **2. Ask about condition in writing before you put money down.** Name the parts: light bar, paint, glass, roof, wheels, windshield. Ask what repaired means and who did the work. I did not do this in July and would not skip it again.
 
