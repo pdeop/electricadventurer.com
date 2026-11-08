@@ -15,6 +15,11 @@ Two Rivians, 60k miles between them, and it took me three tries to buy a third o
 ![The Forest Green R1S and the R1T in the driveway](r1s-and-r1t-driveway.jpg)
 *Two Rivians. The R1S here is still on the stock 22 inch Sport Bright wheels it came with.*
 
+Three preorders in three months: Rivian Blue, Red Canyon, Forest Green. I went full RGB before I got a car.
+
+![My Rivian app garage across the three attempts](rivian-app-rgb.jpg)
+*July, August, September. Only the green one made it to Delivery scheduled.*
+
 ## Why I Was Buying Used in the First Place
 
 My R1S lease was ending in September. I had already decided to skip Gen 2 and buy a used Gen 1 quad instead. Someone else already paid the depreciation, and after two and a half years I knew exactly what I needed. I wrote about that decision in [The Best Car I've Ever Owned](https://electricadventurer.com/blog/best-car-ive-ever-owned/) and shared it on r/Rivian ([post](https://www.reddit.com/r/Rivian/s/LpNaT8cmeD), [thread](https://www.reddit.com/r/Rivian/s/9OBRN1VFsd)). Most of those miles came from trips like [A Winter Colorado Electric Adventure in R1S](https://electricadventurer.com/blog/trailspark-seattle-denver-road-trip/).
@@ -55,13 +60,13 @@ Right after pickup I had a lot of wheel shake. I opened a service ticket, but be
 
 Since then the car has been flawless except for a Highway Assist issue that Rivian is going to look at soon. I've put about 3,000 miles on it already.
 
-The car still had factory warranty left and came with a 7 day return window. After Colorado Springs that mattered more to me than the price did, because it meant the real inspection happened in my own driveway over a week instead of in a parking lot in ten minutes.
+The car still had factory warranty left, which after Colorado Springs mattered to me more than the price did.
 
 ## What I Know Now
 
 Six things, roughly in the order they cost me money.
 
-**1. A disclosure is not a condition report.** The Colorado Springs listing did disclose hail damage, and said it had been repaired before listing. The word repaired was doing a lot of work. What the listing did not mention was the cracked light bar, the scratched wheels, the paint chips, or the windshield pitting. Read a disclosure as the floor, not the ceiling.
+**1. A disclosure is not a condition report.** The Colorado Springs listing did disclose hail damage and said it had been repaired before listing. It did not mention the cracked light bar, the scratched wheels, the paint chips or the windshield pitting. Assume a listing covers some of what is wrong and not all of it, and ask what else there is.
 
 **2. Ask about condition in writing before you put money down.** Name the parts: light bar, paint, glass, roof, wheels, windshield. Ask what repaired means and who did the work. I did not do this in July and would not skip it again.
 
@@ -71,7 +76,7 @@ Six things, roughly in the order they cost me money.
 
 **5. Buy the warranty, not the car.** On a Gen 1 Rivian, remaining factory coverage is most of the risk calculation. Check the in-service date rather than the model year, because that is what the clock runs from.
 
-**6. Insist on a return window and use it.** Drive it cold, drive it on a highway, charge it to full once, run camp mode and the tire inflator, sit in every seat, and look at the car in daylight on a day you are not excited about it.
+**6. Do the whole inspection before you sign, not after.** Drive it cold, drive it on a highway, run camp mode and the tire inflator, sit in every seat, and look at the car in daylight on a day you are not excited about it.
 
 ## Rivian Care
 
@@ -99,7 +104,6 @@ Walk it in this order. The first four are the ones that caught me.
 - [ ] Screens through a full reboot, plus camera views and the driver assist systems
 - [ ] Air suspension through every height setting
 - [ ] Camp mode, tire inflator, and the onboard outlets
-- [ ] Confirm what the return window is, in writing, before you sign
 
 Print it or screenshot it. Delivery day is a bad day to be remembering a list.
 
